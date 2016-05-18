@@ -25,5 +25,5 @@ Miscellaneous Swift Utilities
   s.source_files = 'Miscel/Classes/**/*'
   
   s.dependency 'Layitout'
-  
+    
 end
