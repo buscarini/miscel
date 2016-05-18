@@ -11,6 +11,10 @@ import Foundation
 public struct Reader<Env,A> {
 	public let runReader: (Env) -> (A)
 	
+	public init(runReader: (Env) -> (A)) {
+		self.runReader = runReader
+	}
+	
 	public static func of(value: A) -> Reader {
 		return Reader { (_ : Env) -> A in
 			return value
