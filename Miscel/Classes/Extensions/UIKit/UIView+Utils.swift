@@ -11,12 +11,6 @@ import UIKit
 import Layitout
 
 public extension UIView {
-	public static func fill(container: UIView, subview: UIView) {
-		container.addSubview(subview)
-		subview.translatesAutoresizingMaskIntoConstraints = false
-		Layout.fill(container, view: subview, priority: UILayoutPriorityRequired)
-	}
-	
 	public static func removeAllSubviews(view:UIView) {
 		for subview in view.subviews {
 			subview.removeFromSuperview()
