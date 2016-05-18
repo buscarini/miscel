@@ -1,0 +1,19 @@
+{
+  "name": "Layitout",
+  "version": "0.1.0",
+  "summary": "A short description of Layitout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Layitout",
+  "license": "MIT",
+  "authors": {
+    "José Manuel": "buscarini@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Layitout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Layitout/Classes/**/*"
+}

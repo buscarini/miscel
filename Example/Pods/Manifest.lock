@@ -1,0 +1,28 @@
+PODS:
+  - Layitout (0.1.0)
+  - Miscel (0.1.0):
+    - Layitout
+
+DEPENDENCIES:
+  - Layitout (from `https://github.com/buscarini/layitout.git`, branch `master`)
+  - Miscel (from `../`)
+
+EXTERNAL SOURCES:
+  Layitout:
+    :branch: master
+    :git: https://github.com/buscarini/layitout.git
+  Miscel:
+    :path: ../
+
+CHECKOUT OPTIONS:
+  Layitout:
+    :commit: e6cb3e2d33561d9a32bfdede389056384eb229ca
+    :git: https://github.com/buscarini/layitout.git
+
+SPEC CHECKSUMS:
+  Layitout: b1fb1f232fa99923dfa1997ad3c927f7067f5d65
+  Miscel: 1c413ec0f43425c65c3b4c92611c1ac05fc9b66e
+
+PODFILE CHECKSUM: 0b45f716d60f5ac222ec6d1c37cd21a545b97244
+
+COCOAPODS: 1.0.0
