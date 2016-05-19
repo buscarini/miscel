@@ -1,6 +1,6 @@
 PODS:
-  - Layitout (0.1.0)
-  - Miscel (0.1.0):
+  - Layitout (0.1.2)
+  - Miscel (0.1.3):
     - Layitout
 
 DEPENDENCIES:
@@ -16,12 +16,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Layitout:
-    :commit: e6cb3e2d33561d9a32bfdede389056384eb229ca
+    :commit: e5bd5955149e8e7008b2aa1b57c4d77ff74cc20a
     :git: https://github.com/buscarini/layitout.git
 
 SPEC CHECKSUMS:
-  Layitout: b1fb1f232fa99923dfa1997ad3c927f7067f5d65
-  Miscel: 1c413ec0f43425c65c3b4c92611c1ac05fc9b66e
+  Layitout: 8ab04d3f4d09b945fca1a55902b2a993376056b8
+  Miscel: a610032afbe9cbf8e83cd3cc3a7eb739f116d762
 
 PODFILE CHECKSUM: 0b45f716d60f5ac222ec6d1c37cd21a545b97244
 
