@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '66E6DABCB31DCB0414C49D77D7263E32'
+               BlueprintIdentifier = 'C8648E96FF45657F16A995A8A3C90318'
                BlueprintName = 'Miscel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Miscel.framework'>
