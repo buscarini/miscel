@@ -13,6 +13,14 @@ public extension String {
 		return string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0
 	}
 	
+	public static func isBlank(string: String) -> Bool {
+		guard let string = string else { return true }
+	
+		let	trimmed = string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+	
+		return trimmed.characters.count == 0
+	}
+	
 	public static func plainString(htmlString: String) -> String {
 		return htmlString.stringWithBRsAsNewLines().stringByConvertingHTMLToPlainText()
 	}
