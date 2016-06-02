@@ -13,7 +13,7 @@ public extension String {
 		return string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0
 	}
 	
-	public static func isBlank(string: String) -> Bool {
+	public static func isBlank(string: String?) -> Bool {
 		guard let string = string else { return true }
 	
 		let	trimmed = string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
