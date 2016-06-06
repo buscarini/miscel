@@ -1,6 +1,6 @@
 //
 //  String.swift
-//  OnePodcast
+//  Miscel
 //
 //  Created by Jose Manuel Sánchez Peñarroja on 11/11/15.
 //  Copyright © 2015 vitaminew. All rights reserved.
@@ -11,6 +11,14 @@ import UIKit
 public extension String {
 	public static func empty(string: String) -> Bool {
 		return string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0
+	}
+	
+	public static func isBlank(string: String?) -> Bool {
+		guard let string = string else { return true }
+	
+		let	trimmed = string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+	
+		return trimmed.characters.count == 0
 	}
 	
 	public static func plainString(htmlString: String) -> String {

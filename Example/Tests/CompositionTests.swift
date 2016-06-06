@@ -25,21 +25,19 @@ class CompositionTests: XCTestCase {
     }
 	
 	// MARK: Pure Simple Functions
+	static func shout(s: String) -> String {
+		return s.uppercaseString + "!"
+	}
 
-static func shout(s: String) -> String {
-	return s.uppercaseString + "!"
-}
+	static func double(x: Int) -> Int {
+		return x*2
+	}
 
-static func double(x: Int) -> Int {
-	return x*2
-}
+	static func length(s: String) -> Int {
+		return s.characters.count
+	}
 
-static func length(s: String) -> Int {
-	return s.characters.count
-}
-
-
-
+	// MARK: Tests
     func testComposeOnce() {
 		let string = "blah"
 		
