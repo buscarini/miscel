@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AC117E1F1CFEED6F00D6AEDD /* CompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */; };
+		ACA3E5061D0590E000E59BEA /* MonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3E5051D0590E000E59BEA /* MonoidTests.swift */; };
 		C2296471D2514A8C4411B105 /* Pods_Miscel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43E7C5C94608237188574B4 /* Pods_Miscel_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		932605179A44C47A3DB05580 /* Miscel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Miscel.podspec; path = ../Miscel.podspec; sourceTree = "<group>"; };
 		AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionTests.swift; sourceTree = "<group>"; };
+		ACA3E5051D0590E000E59BEA /* MonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoidTests.swift; sourceTree = "<group>"; };
 		C3CDE3D6DE842814AA1FABDB /* Pods-Miscel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miscel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miscel_Tests/Pods-Miscel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C43E7C5C94608237188574B4 /* Pods_Miscel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miscel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D1D614277E9D1177687AC1 /* Pods_Miscel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miscel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */,
+				ACA3E5051D0590E000E59BEA /* MonoidTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA3E5061D0590E000E59BEA /* MonoidTests.swift in Sources */,
 				AC117E1F1CFEED6F00D6AEDD /* CompositionTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
