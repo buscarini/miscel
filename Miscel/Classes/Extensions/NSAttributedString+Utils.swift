@@ -2,13 +2,14 @@
 //  NSAttributedString+Utils.swift
 //  Miscel
 //
-//  Created by Jose Manuel Sánchez Peñarroja on 30/10/15.
+//  Created by Jose Manuel Sánchez Peñarroja on 11/11/15.
 //  Copyright © 2015 vitaminew. All rights reserved.
 //
 
 import Foundation
 
 extension NSAttributedString {
+
 	 public func trimmed(set: NSCharacterSet) -> NSAttributedString {
 		let result = self.mutableCopy()
 	
@@ -37,7 +38,6 @@ extension NSAttributedString {
 		return result as! NSAttributedString
     }
 }
-
 
 public func +(left: NSAttributedString, right: NSAttributedString) -> NSAttributedString {
 	let result = NSMutableAttributedString()

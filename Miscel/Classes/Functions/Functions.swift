@@ -14,7 +14,7 @@ public func with<T>(constant: T, @noescape update: (inout T) throws ->() ) rethr
 	return variable
 }
 
-public func name(forClass: AnyClass) -> String {
-	return String(forClass.self)
+public func delay(time: NSTimeInterval, closure: () -> ()) {
+	let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+	dispatch_after(delayTime, dispatch_get_main_queue(), closure)
 }
-
