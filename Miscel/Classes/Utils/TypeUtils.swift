@@ -10,7 +10,8 @@ import Foundation
 
 public struct TypeUtils {
 	public static func name(thing: Any) -> String {
-		return String(thing.self)
+		let result = String(thing.self)
+		return result.componentsSeparatedByString(".").last ?? result
 	}
 }
 
