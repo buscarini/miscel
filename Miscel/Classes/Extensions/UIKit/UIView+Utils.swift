@@ -23,6 +23,10 @@ public extension UIView {
 			view.addSubview(subview)
 		}
 	}
+	
+	public func size(forWidth: CGFloat) -> CGSize {
+		return self.systemLayoutSizeFittingSize(CGSize(width: forWidth, height: UILayoutFittingCompressedSize.height))
+	}
 }
 
 // MARK: Properties
