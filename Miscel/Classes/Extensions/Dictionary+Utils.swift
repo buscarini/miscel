@@ -27,7 +27,7 @@ public extension Dictionary where Value: OptionalType {
 				dic[key] = optional
 			}
 			else {
-				dic.removeValueForKey(key)
+				dic.removeValue(forKey: key)
 			}
 		}
 		return dic as! Dictionary<Key,Value.T>
