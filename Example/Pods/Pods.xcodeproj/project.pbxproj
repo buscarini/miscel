@@ -42,6 +42,8 @@
 		AC0A195C1D0C4A9500F8CAA8 /* UITabBarController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0A195B1D0C4A9500F8CAA8 /* UITabBarController+Utils.swift */; };
 		ACB314601D0828610042FD4B /* SequenceType+Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB3145F1D0828610042FD4B /* SequenceType+Take.swift */; };
 		ACC24DDB1D0FFA0500F650DF /* NSBundle+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC24DDA1D0FFA0500F650DF /* NSBundle+Utils.swift */; };
+		ACFDE3BD1D12C0D70057CCFC /* Dictionary+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFDE3BC1D12C0D70057CCFC /* Dictionary+Utils.swift */; };
+		ACFFABDC1D12820100B85328 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFFABDB1D12820100B85328 /* UIViewController+Utils.swift */; };
 		B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */; };
 		B5F8B6ACA593244B62EDB2D19C1F370B /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = B600BE90FE17CDFB0F70B532D0D52A39 /* NSString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B772904586A8FC11DAB188A70C846CFE /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B769EDADE796D24414155C52FF6894D0 /* Monoid.swift */; };
@@ -139,6 +141,8 @@
 		AC952ECA1D330C8FBE752ECAC4BECA57 /* Miscel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-prefix.pch"; sourceTree = "<group>"; };
 		ACB3145F1D0828610042FD4B /* SequenceType+Take.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Take.swift"; sourceTree = "<group>"; };
 		ACC24DDA1D0FFA0500F650DF /* NSBundle+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Utils.swift"; sourceTree = "<group>"; };
+		ACFDE3BC1D12C0D70057CCFC /* Dictionary+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utils.swift"; sourceTree = "<group>"; };
+		ACFFABDB1D12820100B85328 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		B592F427B67CA1EC81DE1A91A837A72A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Layitout/Classes/Layout.swift; sourceTree = "<group>"; };
 		B600BE90FE17CDFB0F70B532D0D52A39 /* NSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 				2478C3334FC25CE404AB65C387BCDA16 /* UITableView+Utils.swift */,
 				57C226F716D9E971B4818350774B727C /* UIView+Utils.swift */,
 				ACC24DDA1D0FFA0500F650DF /* NSBundle+Utils.swift */,
+				ACFFABDB1D12820100B85328 /* UIViewController+Utils.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 				84B37712A9D6542834176656BD9046FB /* NSAttributedString+Utils.swift */,
 				61AD3F9F88CAD21286212B4133360853 /* NSDate.swift */,
 				45972C27742119A6284C3E20E474FC25 /* Array+Equatable.swift */,
+				ACFDE3BC1D12C0D70057CCFC /* Dictionary+Utils.swift */,
 				ACB3145F1D0828610042FD4B /* SequenceType+Take.swift */,
 				086E002049BF3F4CD2C07D519A2AE537 /* String.swift */,
 				3AED91096E60302D7A3C7D5FCCE8408B /* UIKit */,
@@ -659,6 +665,8 @@
 			files = (
 				FA640CD2FD7B4B5C908B6081F8553BCF /* Layitout-dummy.m in Sources */,
 				ACB314601D0828610042FD4B /* SequenceType+Take.swift in Sources */,
+				ACFFABDC1D12820100B85328 /* UIViewController+Utils.swift in Sources */,
+				ACFDE3BD1D12C0D70057CCFC /* Dictionary+Utils.swift in Sources */,
 				B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */,
 				AC0A195C1D0C4A9500F8CAA8 /* UITabBarController+Utils.swift in Sources */,
 				ACC24DDB1D0FFA0500F650DF /* NSBundle+Utils.swift in Sources */,
