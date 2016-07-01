@@ -15,7 +15,7 @@ public struct Reader<Env,A> {
 		self.runReader = runReader
 	}
 	
-	public static func of(value: A) -> Reader {
+	public static func of(_ value: A) -> Reader {
 		return Reader { (_ : Env) -> A in
 			return value
 		}
@@ -25,13 +25,13 @@ public struct Reader<Env,A> {
 		return self.runReader(config)
 	}
 	
-	public func flatMap<B>(f: (A) -> Reader<Env,B>) -> Reader<Env,B> {
+	public func flatMap<B>(_ f: (A) -> Reader<Env,B>) -> Reader<Env,B> {
 		return Reader<Env,B> { config in
 			return f(self.run(config: config)).run(config: config)
 		}
 	}
 	
-	public func map<B>(f: (A) -> (B)) -> Reader<Env,B> {
+	public func map<B>(_ f: (A) -> (B)) -> Reader<Env,B> {
 		return Reader<Env,B> { config in
 			return f(self.run(config: config))
 		}
