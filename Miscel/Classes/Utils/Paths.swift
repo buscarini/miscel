@@ -14,7 +14,7 @@ public struct PathUtils {
 	}
 	
 	public static func getFileName(name: String, pathExtension: String) -> String {
-		return self.appendExtension(pathExtension: pathExtension)(fileName: self.escapeFileName(name))
+		return self.appendExtension(pathExtension)(fileName: self.escapeFileName(name))
 	}
 	
 	public static func escapeFileName(_ string: String) -> String {
