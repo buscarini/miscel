@@ -14,4 +14,11 @@ extension Array {
 			return shouldReplace(current) ? with : current
 		}
 	}
+	
+	public func replacingOrAdding(with: Element, shouldReplace: (Element) -> Bool) -> Array {
+		let replaced = self.replacing(with, shouldReplace: shouldReplace)
+		let wasReplaced = self.filter(shouldReplace).count == 0
+		
+		return wasReplaced ? replaced : replaced + [with]
+	}
 }
