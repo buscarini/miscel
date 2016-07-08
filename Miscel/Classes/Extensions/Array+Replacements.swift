@@ -9,7 +9,7 @@
 import Foundation
 
 extension Array {
-	func replacing(with: Element, shouldReplace: (Element) -> Bool) -> Array {
+	public func replacing(with: Element, shouldReplace: (Element) -> Bool) -> Array {
 		return self.map { current in
 			return shouldReplace(current) ? with : current
 		}
