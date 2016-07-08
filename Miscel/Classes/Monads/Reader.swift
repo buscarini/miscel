@@ -21,19 +21,19 @@ public struct Reader<Env,A> {
 		}
 	}
 	
-	public func run(config : Env) -> A {
+	public func run(_ config : Env) -> A {
 		return self.runReader(config)
 	}
 	
 	public func flatMap<B>(_ f: (A) -> Reader<Env,B>) -> Reader<Env,B> {
 		return Reader<Env,B> { config in
-			return f(self.run(config: config)).run(config: config)
+			return f(self.run(config)).run(config)
 		}
 	}
 	
 	public func map<B>(_ f: (A) -> (B)) -> Reader<Env,B> {
 		return Reader<Env,B> { config in
-			return f(self.run(config: config))
+			return f(self.run(config))
 		}
 	}
 	

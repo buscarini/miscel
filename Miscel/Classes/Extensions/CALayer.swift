@@ -15,7 +15,7 @@ public class NullAction: CAAction {
 }
 
 public extension CALayer {
-	public static func disableAnimations(layer: CALayer) {
+	public static func disableAnimations(_ layer: CALayer) {
 		layer.actions = [
 			"frame" : NullAction(),
 			"bounds" : NullAction(),
@@ -25,7 +25,7 @@ public extension CALayer {
 		]
 	}
 	
-	public static func performWithoutAnimation(block: ()->()) {
+	public static func performWithoutAnimation(_ block: ()->()) {
 		CATransaction.begin()
 		CATransaction.disableActions()
 		block()

@@ -10,7 +10,7 @@ import Foundation
 
 extension AttributedString {
 
-	 public func trimmed(set: CharacterSet) -> AttributedString {
+	 public func trimmed(_ set: CharacterSet) -> AttributedString {
 		let result = self.mutableCopy()
 	
         // Trim leading characters from character set.
@@ -26,7 +26,7 @@ extension AttributedString {
 
         // Trim trailing characters from character set.
 		while true {
-			let range = (result.string as NSString).rangeOfCharacter(from: set, options: .backwardsSearch)
+			let range = (result.string as NSString).rangeOfCharacter(from: set, options: .backwards)
 			
 			guard range.length != 0 && NSMaxRange(range) == result.length else {
 				break

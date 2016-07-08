@@ -10,16 +10,16 @@ import UIKit
 
 extension Bundle {
 
-	public static func loadView(nibName: String?, owner: AnyObject) -> UIView? {
-		return Bundle.main().loadView(nibName: nibName, owner: owner)
+	public static func loadView(_ nibName: String?, owner: AnyObject) -> UIView? {
+		return Bundle.main.loadView(nibName, owner: owner)
 	}
 
-	public func loadView(nibName : String?, owner: AnyObject) -> UIView? {
+	public func loadView(_ nibName : String?, owner: AnyObject) -> UIView? {
 		guard let nibName = nibName else {
 			return nil
 		}
 		
-		let views = Bundle.main().loadNibNamed(nibName, owner: owner, options: nil)
+		let views = Bundle.main.loadNibNamed(nibName, owner: owner, options: nil)
 		return views.first as? UIView
 	}
 }

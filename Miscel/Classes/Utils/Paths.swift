@@ -9,8 +9,8 @@
 import Foundation
 
 public struct PathUtils {
-	public static func docsDirUrl() -> NSURL? {
-		return FileManager.default().urlsForDirectory(.documentDirectory, inDomains: .userDomainMask).first
+	public static func docsDirUrl() -> URL? {
+		return FileManager.default.urlsForDirectory(.documentDirectory, inDomains: .userDomainMask).first
 	}
 	
 	public static func getFileName(name: String, pathExtension: String) -> String {
