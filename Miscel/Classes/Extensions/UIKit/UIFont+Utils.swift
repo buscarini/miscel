@@ -17,4 +17,23 @@ public extension UIFont {
 
         return UIFont(descriptor: newFontDescriptor, size: 0)
     }
+	
+	public static func fontSize(toFit: CGRect, string: String, font: UIFont) -> CGFloat {
+		var thefont = font
+		
+		while !self.fits(rect: toFit, string: string, font: thefont) {
+			thefont = thefont.withSize(thefont.pointSize-1)
+		}
+		
+		return thefont.pointSize
+	}
+	
+	public static func fits(rect: CGRect, string: String, font: UIFont) -> Bool {
+		let nsstring = string as NSString
+		
+		let maxSize = CGSize(width: rect.width, height: 1000)
+
+		let rect = nsstring.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [ NSFontAttributeName : font ], context: nil)
+		return rect.width <= rect.width && rect.height <= rect.height
+	}
 }
