@@ -13,7 +13,15 @@ import Layitout
 // MARK: Subviews
 public extension UIView {
 	public static func removeAllSubviews(view:UIView) {
-		for subview in view.subviews {
+		view.removeSubviews(view.subviews)
+	}
+	
+	public func removeAllSubviews() {
+		UIView.removeAllSubviews(self)
+	}
+	
+	public func removeSubviews(views: [UIView]) {
+		for subview in views {
 			subview.removeFromSuperview()
 		}
 	}
@@ -22,6 +30,19 @@ public extension UIView {
 		for subview in subviews {
 			view.addSubview(subview)
 		}
+	}
+	
+	public func addSubviews(subviews: [UIView]) {
+		UIView.addSubviews(self, subviews: subviews)
+	}
+	
+	public static func replaceSubviews(view: UIView, subviews: [UIView]) {
+		UIView.removeAllSubviews(view)
+		UIView.addSubviews(view, subviews: subviews)
+	}
+	
+	public func replaceSubviews(subviews: [UIView]) {
+		UIView.replaceSubviews(self, subviews: subviews)
 	}
 	
 	public func size(forWidth: CGFloat) -> CGSize {

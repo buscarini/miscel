@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Miscel"
-  s.version          = "0.1.9"
+  s.version          = "0.2.0"
   s.summary          = "Miscellaneous Swift Utilities"
 
   s.description      = <<-DESC

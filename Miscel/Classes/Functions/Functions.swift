@@ -8,10 +8,18 @@
 
 import Foundation
 
-public func with<T>(constant: T, @noescape update: (inout T) throws ->() ) rethrows -> T {
-	var variable = constant
+public func update<T>(with: T, @noescape update: (inout T) throws ->() ) rethrows -> T {
+	var variable = with
 	try update(&variable)
 	return variable
+}
+
+public func updater<T>(update: (inout T) ->()) -> (T) -> T {
+	return { constant in
+		var variable = constant
+		update(&variable)
+		return variable
+	}
 }
 
 public func delay(time: NSTimeInterval, closure: () -> ()) {
