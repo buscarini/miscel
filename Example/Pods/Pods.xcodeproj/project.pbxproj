@@ -44,6 +44,7 @@
 		92BD8EB71047FEC25CB3D3129B19EDF4 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDACFA47EA97552C8BD6E68754208AB /* Writer.swift */; };
 		A0750542FC3E888B648163FB195AE23C /* String+Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDC9E6B9FCED91B63944912B96C4DAD /* String+Monoid.swift */; };
 		A9E05DBFB7F4A43FD9E9FD6AF4FF9A5D /* UIBarButtonItem+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724B5E7A0083A7208470B1324AFE3AE /* UIBarButtonItem+Utils.swift */; };
+		AC0CFB7E1D3F82D800F215F9 /* Array+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0CFB7D1D3F82D800F215F9 /* Array+Split.swift */; };
 		AD01D57F3A7877B17C5CBD67953BAD94 /* Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CD75DF87F2030278B57EB4250235BE /* Sum.swift */; };
 		B1364EE7E6ABA3B1153E99740CF69853 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A0F77BAECA5AB01AF8C29099FCE10 /* Functions.swift */; };
 		B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22A216C0F68C5905EACDFA0C42162 /* Layout.swift */; };
@@ -139,6 +140,7 @@
 		A76E4D5F5D70DB46A1D808AE682E7343 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		AA48574259CF555D4E8CD4031283DF01 /* Miscel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Miscel.modulemap; sourceTree = "<group>"; };
 		ABFC0BE62BC49FBA4342BDC25332E06D /* Pods-Miscel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Miscel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC0CFB7D1D3F82D800F215F9 /* Array+Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Split.swift"; sourceTree = "<group>"; };
 		AC952ECA1D330C8FBE752ECAC4BECA57 /* Miscel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Miscel-prefix.pch"; sourceTree = "<group>"; };
 		AFDC9E6B9FCED91B63944912B96C4DAD /* String+Monoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Monoid.swift"; sourceTree = "<group>"; };
 		B592F427B67CA1EC81DE1A91A837A72A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				1F30EB60DFC053A5DB0318522B633654 /* Array+Equatable.swift */,
+				AC0CFB7D1D3F82D800F215F9 /* Array+Split.swift */,
 				858E20D1648EE56778EE9AD81E3F40C9 /* Array+Replacements.swift */,
 				DF8B838EB5DDCE31AAFBF0B3BAF8F805 /* CALayer.swift */,
 				0892A18F8DF8EF87914B3456A5188DD0 /* Dictionary+Utils.swift */,
@@ -674,6 +677,7 @@
 			files = (
 				FA640CD2FD7B4B5C908B6081F8553BCF /* Layitout-dummy.m in Sources */,
 				B5115F4363997776670E4B042DE43620 /* Layout.swift in Sources */,
+				AC0CFB7E1D3F82D800F215F9 /* Array+Split.swift in Sources */,
 				49CA09E138A800CE42268A01018EDCE8 /* UIView+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
