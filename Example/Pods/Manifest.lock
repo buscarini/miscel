@@ -1,6 +1,6 @@
 PODS:
   - Layitout (0.1.2)
-  - Miscel (0.1.9):
+  - Miscel (0.2.0):
     - Layitout
 
 DEPENDENCIES:
@@ -21,8 +21,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Layitout: 8ab04d3f4d09b945fca1a55902b2a993376056b8
-  Miscel: 05fe6271486c0acdf9077bfa9cddf6811c0427b7
+  Miscel: 92c72025c654bec31c6768d2d4ba006a347dd59f
 
 PODFILE CHECKSUM: 0b45f716d60f5ac222ec6d1c37cd21a545b97244
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.beta.1

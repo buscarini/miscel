@@ -9,10 +9,10 @@
 import Foundation
 
 public struct Reader<Env,A> {
-	public let runReader: (Env) -> (A)
+	public let run: (Env) -> (A)
 	
-	public init(runReader: (Env) -> (A)) {
-		self.runReader = runReader
+	public init(run: (Env) -> (A)) {
+		self.run = run
 	}
 	
 	public static func of(value: A) -> Reader {
@@ -22,7 +22,7 @@ public struct Reader<Env,A> {
 	}
 	
 	public func run(config : Env) -> A {
-		return self.runReader(config)
+		return self.run(config)
 	}
 	
 	public func flatMap<B>(f: (A) -> Reader<Env,B>) -> Reader<Env,B> {

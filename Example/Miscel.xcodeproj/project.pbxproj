@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		AC117E1F1CFEED6F00D6AEDD /* CompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */; };
 		ACA3E5061D0590E000E59BEA /* MonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3E5051D0590E000E59BEA /* MonoidTests.swift */; };
+		ACE4F8BA1D40C3AA00CD0FC7 /* ApplicativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4F8B91D40C3AA00CD0FC7 /* ApplicativeTests.swift */; };
 		C2296471D2514A8C4411B105 /* Pods_Miscel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43E7C5C94608237188574B4 /* Pods_Miscel_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		932605179A44C47A3DB05580 /* Miscel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Miscel.podspec; path = ../Miscel.podspec; sourceTree = "<group>"; };
 		AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionTests.swift; sourceTree = "<group>"; };
 		ACA3E5051D0590E000E59BEA /* MonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoidTests.swift; sourceTree = "<group>"; };
+		ACE4F8B91D40C3AA00CD0FC7 /* ApplicativeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicativeTests.swift; sourceTree = "<group>"; };
 		C3CDE3D6DE842814AA1FABDB /* Pods-Miscel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miscel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miscel_Tests/Pods-Miscel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C43E7C5C94608237188574B4 /* Pods_Miscel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miscel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D1D614277E9D1177687AC1 /* Pods_Miscel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miscel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 			children = (
 				AC117E1E1CFEED6F00D6AEDD /* CompositionTests.swift */,
 				ACA3E5051D0590E000E59BEA /* MonoidTests.swift */,
+				ACE4F8B91D40C3AA00CD0FC7 /* ApplicativeTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -337,7 +340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E9DC4951305289F2C4879CDD /* [CP] Check Pods Manifest.lock */ = {
@@ -352,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE4F8BA1D40C3AA00CD0FC7 /* ApplicativeTests.swift in Sources */,
 				ACA3E5061D0590E000E59BEA /* MonoidTests.swift in Sources */,
 				AC117E1F1CFEED6F00D6AEDD /* CompositionTests.swift in Sources */,
 			);
