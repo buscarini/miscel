@@ -11,26 +11,32 @@ import UIKit
 import Layitout
 
 extension UIViewController {
-	public func embed(child: UIViewController, inView: UIView) -> UIViewController {
-		self.embed(child) {
+	public func embed(_ child: UIViewController, inView: UIView) -> UIViewController {
+		return self.embed(child) {
 			child.view.translatesAutoresizingMaskIntoConstraints = false
 			inView.addSubview(child.view)
-			Layout.fill(inView, view: child.view)
+			Layout.fill(container: inView, view: child.view)
+			inView.bringSubview(toFront: child.view)
 		}
-		return child
 	}
 
-	public func embed(child: UIViewController, addSubview: ()->()) -> UIViewController {
+	public func embed(_ child: UIViewController, addSubview: ()->()) -> UIViewController {
 		self.addChildViewController(child)
 		addSubview()
-		child.didMoveToParentViewController(self)
+		child.didMove(toParentViewController: self)
 		return child
 	}
 	
-	public func unembed(child: UIViewController) {
-		child.willMoveToParentViewController(self)
+	public func unembed(_ child: UIViewController) {
+		child.willMove(toParentViewController: self)
 		child.view.removeFromSuperview()
 		child.removeFromParentViewController()
+	}
+	
+	public func removeChildViewControllers() {
+		for child in childViewControllers {
+			self.unembed(child)
+        }
 	}
 }
 

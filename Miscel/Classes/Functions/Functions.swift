@@ -8,21 +8,13 @@
 
 import Foundation
 
-public func update<T>(with: T, @noescape update: (inout T) throws ->() ) rethrows -> T {
-	var variable = with
+public func with<T>(_ constant: T, update: @noescape(inout T) throws ->() ) rethrows -> T {
+	var variable = constant
 	try update(&variable)
 	return variable
 }
 
-public func updater<T>(update: (inout T) ->()) -> (T) -> T {
-	return { constant in
-		var variable = constant
-		update(&variable)
-		return variable
-	}
-}
-
-public func delay(time: NSTimeInterval, closure: () -> ()) {
-	let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
-	dispatch_after(delayTime, dispatch_get_main_queue(), closure)
+public func delay(_ time: TimeInterval, closure: () -> ()) {
+	let dispatchTime: DispatchTime = DispatchTime.now() + Double(Int64(time * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+	DispatchQueue.main.after(when: dispatchTime, execute: closure)
 }
