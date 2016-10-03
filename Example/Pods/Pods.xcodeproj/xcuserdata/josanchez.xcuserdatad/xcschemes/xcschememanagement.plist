@@ -9,10 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Miscel.xcscheme_^#shared#^_</key>
+		<key>Miscel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Pods-Miscel_Example.xcscheme</key>
 		<dict>
@@ -32,7 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7238B8364D610CDA3A979954316A5788</key>
+		<key>ACCEB8E678D1299709BA890053CEAF3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
