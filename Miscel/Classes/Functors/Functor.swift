@@ -8,9 +8,9 @@
 
 import Foundation
 
-infix operator <^> { associativity left }
+infix operator <^>: Additive
 
-public func <^><T, U>(f: T -> U, a: T?) -> U? {
+public func <^><T, U>(_ f: (T) -> U, a: T?) -> U? {
     return a.map(f)
 }
 

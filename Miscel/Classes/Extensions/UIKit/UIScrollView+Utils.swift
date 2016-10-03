@@ -9,46 +9,46 @@
 import UIKit
 
 public enum PagingOrientation {
-	case Horizontal
-	case Vertical
+	case horizontal
+	case vertical
 }
 
 extension UIScrollView {
 
-	static func offset(scrollView: UIScrollView, forPage: Int, orientation: PagingOrientation) -> CGFloat {
+	static func offset(_ scrollView: UIScrollView, forPage: Int, orientation: PagingOrientation) -> CGFloat {
 	
 		let page = CGFloat(forPage)
 	
 		switch orientation {
-			case .Horizontal:
+			case .horizontal:
 				return scrollView.bounds.size.width*page
 			
-			case .Vertical:
+			case .vertical:
 				return scrollView.bounds.size.height*page
 		}
 	}
 
-	static func numPages(scrollView: UIScrollView, orientation: PagingOrientation) -> Int {
+	static func numPages(_ scrollView: UIScrollView, orientation: PagingOrientation) -> Int {
 		switch orientation {
-			case .Horizontal:
+			case .horizontal:
 				return Int(scrollView.contentSize.width/scrollView.bounds.size.width)
 			
-			case .Vertical:
+			case .vertical:
 				return Int(scrollView.contentSize.height/scrollView.bounds.size.height)
 		}
 	}
 
-	static func currentPage(scrollView: UIScrollView, orientation: PagingOrientation) -> Int {
+	static func currentPage(_ scrollView: UIScrollView, orientation: PagingOrientation) -> Int {
 		let offset: CGFloat
 		switch orientation {
-			case .Horizontal:
+			case .horizontal:
 				offset = scrollView.contentOffset.x
 			
-			case .Vertical:
+			case .vertical:
 				offset = scrollView.contentOffset.y
 		}
 		
-		return Int(offset/CGFloat(self.numPages(scrollView: scrollView, orientation: orientation)))
+		return Int(offset/CGFloat(self.numPages(scrollView, orientation: orientation)))
 	}
 }
 

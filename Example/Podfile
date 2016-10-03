@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'Miscel_Example' do
   
-  pod 'Layitout', :git => 'https://github.com/buscarini/layitout.git', :branch => 'feature/Swift3'
+  pod 'Layitout', :git => 'https://github.com/buscarini/layitout.git', :branch => 'develop'
   pod 'Miscel', :path => '../'
 
   target 'Miscel_Tests' do

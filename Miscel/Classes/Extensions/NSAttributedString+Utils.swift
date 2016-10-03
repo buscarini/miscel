@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension AttributedString {
+extension NSAttributedString {
 
-	 public func trimmed(_ set: CharacterSet) -> AttributedString {
-		let result = self.mutableCopy()
+	 public func trimmed(_ set: CharacterSet) -> NSAttributedString {
+		var result = self.mutableCopy() as! NSMutableAttributedString
 	
         // Trim leading characters from character set.
 		while true {
@@ -35,11 +35,11 @@ extension AttributedString {
 			result.replaceCharacters(in: range, with: "")
 		}
 		
-		return result as! AttributedString
+		return result as! NSAttributedString
     }
 }
 
-public func +(left: AttributedString, right: AttributedString) -> AttributedString {
+public func +(left: NSAttributedString, right: NSAttributedString) -> NSAttributedString {
 	let result = NSMutableAttributedString()
 	
 	result.append(left)

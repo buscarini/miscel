@@ -8,7 +8,7 @@
 
 import Foundation
 
-infix operator <*> {
-	associativity left
-	precedence 150
-}
+infix operator <*>: Additive
+//	associativity left
+//	precedence 150
+//}

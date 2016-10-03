@@ -9,9 +9,9 @@
 import UIKit
 
 extension UIActivityIndicatorView {
-	var animating: Bool {
+	var spinning: Bool {
 		get {
-			return self.isAnimating()
+			return self.isAnimating
 		}
 		set(newValue) {
 			if newValue {

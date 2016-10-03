@@ -20,7 +20,7 @@ extension Bundle {
 		}
 		
 		let views = Bundle.main.loadNibNamed(nibName, owner: owner, options: nil)
-		return views.first as? UIView
+		return views?.first as? UIView
 	}
 	
 	var releaseVersionNumber: String? {

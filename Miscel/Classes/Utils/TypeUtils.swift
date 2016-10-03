@@ -10,7 +10,7 @@ import Foundation
 
 public struct TypeUtils {
 	public static func name(_ thing: Any) -> String {
-		return String(thing.self)
+		return String(describing: thing.self)
 	}
 }
 

@@ -9,9 +9,9 @@
 import UIKit
 
 public enum CGRectFitMode {
-	case ScaleToFill
-	case AspectFit
-	case AspectFill
+	case scaleToFill
+	case aspectFit
+	case aspectFill
 }
 
 public extension CGRect {
@@ -37,7 +37,7 @@ public extension CGRect {
 		return rect
 	}
 	
-	static public func rect(toFit rect: CGRect, toContainer container: CGRect, mode: CGRectFitMode = .AspectFit, allowScaleUp: Bool = true) -> CGRect {
+	static public func rect(toFit rect: CGRect, toContainer container: CGRect, mode: CGRectFitMode = .aspectFit, allowScaleUp: Bool = true) -> CGRect {
 	
 		var x: CGFloat = 0
 		var y: CGFloat = 0
@@ -47,7 +47,7 @@ public extension CGRect {
 		let aspectRatio = rect.width/rect.height
 		
 		switch mode {
-			case .AspectFill:
+			case .aspectFill:
 				height = container.height
 				width = height*aspectRatio
 				if width<container.width {
@@ -61,7 +61,7 @@ public extension CGRect {
 					x = (container.width - width)/2
 				}
 			
-			case .AspectFit:
+			case .aspectFit:
 				height = container.height
 				width = height*aspectRatio
 				if width>container.width {
@@ -74,7 +74,7 @@ public extension CGRect {
 					y = 0
 					x = (container.width - width)/2
 				}
-			case .ScaleToFill:
+			case .scaleToFill:
 				return container
 
 		}

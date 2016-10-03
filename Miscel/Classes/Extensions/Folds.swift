@@ -26,7 +26,7 @@ public extension Collection {
 		return self.suffix(from: secondIndex)
 	}
 	
-	public func foldr<B>(_ accm:B, f: (Self.Iterator.Element, B) -> B) -> B {
+	public func foldr<B>(_ accm:B, f: @escaping (Self.Iterator.Element, B) -> B) -> B {
 		var g = self.makeIterator()
 		func next() -> B {
 			return g.next().flatMap {x in f(x, next())} ?? accm

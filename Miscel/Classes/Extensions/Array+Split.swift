@@ -11,7 +11,7 @@ import Foundation
 extension Array {
 	public func split(accept: (Element) -> Bool) -> (Array, Array) {
 		return self.reduce( (Array<Element>(),Array<Element>())
-			, combine: { acc, item in
+			, { acc, item in
 			var (accepted, rejected) = acc
 			
 			accept(item) ? accepted.append(item) : rejected.append(item)

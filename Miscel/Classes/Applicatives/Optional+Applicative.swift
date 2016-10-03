@@ -14,15 +14,18 @@ import Foundation
 
 
 extension Optional {
-    public func apply<U>(f: (Wrapped -> U)?) -> U? {
+    public func apply<U>(_ f: ((Wrapped) -> U)?) -> U? {
         switch f {
-        case .Some(let someF): return self.map(someF)
-        case .None: return .None
+			case .some(let someF):
+				return self.map(someF)
+			case nil:
+				return nil
         }
     }
 }
 
-public func <*><T, U>(f: (T -> U)?, a: T?) -> U? {
+//infix operator <*>: Additive // { associativity left }
+public func <*><T, U>(_ f: ((T) -> U)?, a: T?) -> U? {
     return a.apply(f)
 }
 

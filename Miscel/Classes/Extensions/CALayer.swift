@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class NullAction: CAAction {
-	@objc public func run(forKey event: String, object anObject: AnyObject, arguments dict: [NSObject : AnyObject]?) {
-		// Do nothing.
+open class NullAction: CAAction {
+	public func run(forKey event: String, object anObject: Any, arguments dict: [AnyHashable : Any]?) {
+		
 	}
 }
 

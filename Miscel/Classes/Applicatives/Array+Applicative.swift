@@ -9,7 +9,7 @@
 import Foundation
 
 extension Array {
-    public func apply<U>(fs: [Element -> U]) -> [U] {
+    public func apply<U>(_ fs: [(Element) -> U]) -> [U] {
         var result = [U]()
         for f in fs {
             for element in self.map(f) {
@@ -23,7 +23,8 @@ extension Array {
 //    return lhs.flatMap { f in rhs.map(f) }
 //}
 
-public func <*><T, U>(f: [T -> U], a: [T]) -> [U] {
+//infix operator <*> { associativity left precedence }
+public func <*><T, U>(_ f: [(T) -> U], _ a: [T]) -> [U] {
     return a.apply(f)
 }
 
