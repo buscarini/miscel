@@ -45,7 +45,7 @@ public extension UIView {
 		UIView.replaceSubviews(self, subviews: subviews)
 	}
 	
-	public func size(_ forWidth: CGFloat) -> CGSize {
+	public func size(forWidth: CGFloat) -> CGSize {
 		return self.systemLayoutSizeFitting(CGSize(width: forWidth, height: UILayoutFittingCompressedSize.height))
 	}
 }
