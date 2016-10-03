@@ -9,10 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Miscel.xcscheme</key>
+		<key>Miscel.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Pods-Miscel_Example.xcscheme</key>
 		<dict>
