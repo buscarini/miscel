@@ -1,6 +1,6 @@
 PODS:
   - Layitout (0.2.1)
-  - Miscel (0.2.0):
+  - Miscel (0.2.1):
     - Layitout
 
 DEPENDENCIES:
@@ -21,7 +21,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Layitout: 6ca46d3364cfed0a4c5b13cd706ec153f803637c
-  Miscel: 92c72025c654bec31c6768d2d4ba006a347dd59f
+  Miscel: 91bb562e13fd5acd0b1b3f78485a98187a7582b6
 
 PODFILE CHECKSUM: 688b5a97b07ef10169543dcd2994f223afd44cbe
 
