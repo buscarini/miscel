@@ -14,3 +14,7 @@ public func <^><T, U>(_ f: (T) -> U, a: T?) -> U? {
     return a.map(f)
 }
 
+public func <^><T, U>(_ f: (T) -> U, a: [T]) -> [U] {
+    return a.map(f)
+}
+

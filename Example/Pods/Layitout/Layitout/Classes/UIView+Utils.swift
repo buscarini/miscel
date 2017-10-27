@@ -12,7 +12,7 @@ public extension UIView {
 	public static func fill(_ container: UIView, subview: UIView, margins: UIEdgeInsets = UIEdgeInsets.zero) {
 		container.addSubview(subview)
 		subview.translatesAutoresizingMaskIntoConstraints = false
-		Layout.fill(container: container, view: subview, priority: UILayoutPriorityRequired, margins: margins)
+		Layout.fill(container: container, view: subview, priority: UILayoutPriority.required, margins: margins)
 	}
 	
 	func fill(subview: UIView, margins: UIEdgeInsets = UIEdgeInsets.zero) {

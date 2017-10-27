@@ -52,11 +52,15 @@ public extension String {
 	
 	public static func words(_ string: String) -> [String] {
 		var results : [String] = []
-		string.enumerateLinguisticTags(in: self.wholeRange(string), scheme: NSLinguisticTagWord, options: [], orthography: nil) {
+		
+		string.enumerateLinguisticTags(in: self.wholeRange(string), scheme: NSLinguisticTagScheme.lemma.rawValue, options: [], orthography: nil) {
 		
 //		string.enumerateLinguisticTagsInRange(self.wholeRange(string), scheme: NSLinguisticTagWord, options: [], orthography: nil) {
 			(tag, tokenRange, sentenceRange,_) in
-			results.append(string.substring(with: tokenRange))
+			
+			results.append(String(string[tokenRange]))
+			
+//			results.append(string.substring(with: tokenRange))
 //			results.append(string.substringWithRange(tokenRange))
 		}
 		

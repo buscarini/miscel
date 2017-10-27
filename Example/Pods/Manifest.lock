@@ -1,5 +1,5 @@
 PODS:
-  - Layitout (0.2.0)
+  - Layitout (0.2.1)
   - Miscel (0.2.0):
     - Layitout
 
@@ -16,13 +16,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Layitout:
-    :commit: c10134aec75dffc9e84eb7609d06ccd4d2f36e62
+    :commit: 65bfcea46c8bda8029dc5076f3c25e1f309b8baa
     :git: https://github.com/buscarini/layitout.git
 
 SPEC CHECKSUMS:
-  Layitout: b6d3cead8a230e68a76696d9bcb6e5d61a0410a0
+  Layitout: 6ca46d3364cfed0a4c5b13cd706ec153f803637c
   Miscel: 92c72025c654bec31c6768d2d4ba006a347dd59f
 
-PODFILE CHECKSUM: 4e6efe9c564b86b9ae45c10eee6b7c9f1a34c9dd
+PODFILE CHECKSUM: 688b5a97b07ef10169543dcd2994f223afd44cbe
 
-COCOAPODS: 1.1.0.beta.1
+COCOAPODS: 1.3.1

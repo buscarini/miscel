@@ -40,8 +40,8 @@ class ApplicativeTests: XCTestCase {
 		XCTAssertTrue(arrayApplicative == [ 4, 5, 6, 2, 4, 6 ])
 
 	
-		let left = [ 1, 2]
-		let right = [ 2, 3 ]
+		let left = [1, 2]
+		let right = [2, 3]
 		let result = curry(+) <^> left <*> right
 		XCTAssertTrue(result == [ 3, 4, 4, 5 ])
 	}

@@ -10,8 +10,8 @@ import UIKit
 
 public extension UIFont {
     public var monospacedDigitFont: UIFont {
-        let fontDescriptorFeatureSettings = [[UIFontFeatureTypeIdentifierKey: kNumberSpacingType, UIFontFeatureSelectorIdentifierKey: kMonospacedNumbersSelector]]
-        let fontDescriptorAttributes = [UIFontDescriptorFeatureSettingsAttribute: fontDescriptorFeatureSettings]
+		let fontDescriptorFeatureSettings = [[UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType, UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector]]
+		let fontDescriptorAttributes = [UIFontDescriptor.AttributeName.featureSettings: fontDescriptorFeatureSettings]
         let oldFontDescriptor = fontDescriptor
         let newFontDescriptor = oldFontDescriptor.addingAttributes(fontDescriptorAttributes)
 
@@ -33,7 +33,7 @@ public extension UIFont {
 		
 		let maxSize = CGSize(width: rect.width, height: 1000)
 
-		let rect = nsstring.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [ NSFontAttributeName : font ], context: nil)
+		let rect = nsstring.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [ NSAttributedStringKey.font : font ], context: nil)
 		return rect.width <= rect.width && rect.height <= rect.height
 	}
 }
