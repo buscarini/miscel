@@ -12,7 +12,7 @@ import Layitout
 
 // MARK: Subviews
 public extension UIView {
-	public static func removeAllSubviews(view:UIView) {
+	public static func removeAllSubviews(_ view: UIView) {
 		view.removeSubviews(view.subviews)
 	}
 	
@@ -20,33 +20,33 @@ public extension UIView {
 		UIView.removeAllSubviews(self)
 	}
 	
-	public func removeSubviews(views: [UIView]) {
+	public func removeSubviews(_ views: [UIView]) {
 		for subview in views {
 			subview.removeFromSuperview()
 		}
 	}
 	
-	public static func addSubviews(view: UIView, subviews: [UIView]) {
+	public static func addSubviews(_ view: UIView, subviews: [UIView]) {
 		for subview in subviews {
 			view.addSubview(subview)
 		}
 	}
 	
-	public func addSubviews(subviews: [UIView]) {
+	public func addSubviews(_ subviews: [UIView]) {
 		UIView.addSubviews(self, subviews: subviews)
 	}
 	
-	public static func replaceSubviews(view: UIView, subviews: [UIView]) {
+	public static func replaceSubviews(_ view: UIView, subviews: [UIView]) {
 		UIView.removeAllSubviews(view)
 		UIView.addSubviews(view, subviews: subviews)
 	}
 	
-	public func replaceSubviews(subviews: [UIView]) {
+	public func replaceSubviews(_ subviews: [UIView]) {
 		UIView.replaceSubviews(self, subviews: subviews)
 	}
 	
 	public func size(forWidth: CGFloat) -> CGSize {
-		return self.systemLayoutSizeFittingSize(CGSize(width: forWidth, height: UILayoutFittingCompressedSize.height))
+		return self.systemLayoutSizeFitting(CGSize(width: forWidth, height: UILayoutFittingCompressedSize.height))
 	}
 }
 
@@ -71,7 +71,7 @@ public extension UIView {
 
 // MARK: Corners
 public extension UIView {
-	public func roundCorners(radius: CGFloat? = nil) {
+	public func roundCorners(_ radius: CGFloat? = nil) {
 		self.layer.cornerRadius = radius ?? min(self.width/4.0, self.height/4.0)
 		self.layer.masksToBounds = true
 	}

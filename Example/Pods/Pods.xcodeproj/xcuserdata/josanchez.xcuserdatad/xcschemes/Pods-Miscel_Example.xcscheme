@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D285604780280961B71986E2ED4C896E"
+               BlueprintIdentifier = "896547E6A7F62E759ED0547013418FD7"
                BuildableName = "Pods_Miscel_Example.framework"
                BlueprintName = "Pods-Miscel_Example"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D285604780280961B71986E2ED4C896E"
+            BlueprintIdentifier = "896547E6A7F62E759ED0547013418FD7"
             BuildableName = "Pods_Miscel_Example.framework"
             BlueprintName = "Pods-Miscel_Example"
             ReferencedContainer = "container:Pods.xcodeproj">

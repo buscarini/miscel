@@ -26,7 +26,7 @@ class CompositionTests: XCTestCase {
 	
 	// MARK: Pure Simple Functions
 	static func shout(s: String) -> String {
-		return s.uppercaseString + "!"
+		return s.uppercased() + "!"
 	}
 
 	static func double(x: Int) -> Int {

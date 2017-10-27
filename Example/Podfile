@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'Miscel_Example' do
   
-  pod 'Layitout', :git => 'https://github.com/buscarini/layitout.git', :branch => 'master'
+  pod 'Layitout', :git => 'https://github.com/buscarini/layitout.git', :branch => 'develop'
   pod 'Miscel', :path => '../'
 
   target 'Miscel_Tests' do
@@ -10,4 +10,14 @@ target 'Miscel_Example' do
 
     
   end
+end
+
+post_install do |installer|
+	
+    puts "Setting Swift flags for PODS projects"
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+    end
 end

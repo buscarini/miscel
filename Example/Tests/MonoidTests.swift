@@ -23,8 +23,8 @@ class MonoidTests: XCTestCase {
     }
 	
 	// MARK: Help Functions
-	static func fold<T: Monoid>(values: [T]) -> T {
-		return values.reduce(T.unit, combine: T.combine)
+	static func fold<T: Monoid>(_ values: [T]) -> T {
+		return values.reduce(T.unit, T.combine)
 	}
 	
 	// MARK: Tests
